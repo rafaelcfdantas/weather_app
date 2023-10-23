@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafael de Carvalho França Dantas">
+    <meta name="description" content="Tenha acesso à informações simples sobre a previsão do tempo no seu local de preferência!">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <title>Previsão do Tempo</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main class="container morning">
+        <header class="header">
+            <div class="header__search">
+                <i class="uil uil-map-marker header__icon"></i>
+                <input type="search" name="q" class="header__input" placeholder="Procure por um local..." autocomplete="off">
+            </div>
+            <a href="#" class="header__btn">
+                <i class="uil uil-search"></i>
+            </a>
+        </header>
+
+        <section class="weather">
+            <i class="uil uil-sun weather__icon"></i>
+
+            <span class="weather__temperature">
+                30<i class="uil uil-celsius"></i>
+            </span>
+
+            <span class="weather__city">Vila Velha</span>
+
+            <div class="weather__infos">
+                <div class="weather__info">
+                    <i class="uil uil-raindrops weather__info-icon"></i>
+                    <div class="weather__info-description">
+                        49%
+                        <p>Prob. de chuva</p>
+                    </div>
+                </div>
+
+                <div class="weather__info">
+                    <i class="uil uil-wind weather__info-icon"></i>
+                    <div class="weather__info-description">
+                        16km/h
+                        <p>Vel. do Vento</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

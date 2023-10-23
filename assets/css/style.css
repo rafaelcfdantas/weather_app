@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #232526;
+    background: -webkit-linear-gradient(to top, #414345, #232526);
+    background: linear-gradient(to top, #414345, #232526);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.container {
+    width: 700px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.container.morning {
+    color: #808080;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(352deg, #FFDEE9 0%, #B5FFFC 100%);
+}
+
+.container.sun {
+    background-color: #0093E9;
+    background-image: linear-gradient(#3b70d7,#39adcb,#60d4db);
+}
+
+.container.sunset {
+    background-color: #FBAB7E;
+    background-image: linear-gradient(200deg, #FBAB7E 0%, #F7CE68 100%);
+}
+
+.container.rain {
+    background-color: #516b78;
+    background-image: linear-gradient(to top, #c1c0bd, #92a1a7, #516b78);
+}
+
+.container.night {
+    background-color: #11295a;
+    background-image: linear-gradient(to bottom, #020813, #11295a, #46266e);
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.header__search {
+    position: relative;
+    width: 70%;
+}
+
+.header__icon {
+    color: #808080;
+    position: absolute;
+    top: 15%;
+    left: 20px;
+    font-size: 1.5rem;
+}
+
+.header__input {
+    width: 100%;
+    outline: none;
+    border-width: 0;
+    border-radius: 1rem;
+    padding: .75rem;
+    padding-left: 2.5rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.header__btn {
+    font-size: 1.3rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #808080;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    margin-top: 30px;
+}
+
+.weather__icon {
+    font-size: 6rem;
+    color: #ffc400;
+}
+
+.weather__temperature {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.weather__city {
+    font-size: 2rem;
+}
+
+.weather__infos {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.weather__info {
+    display: flex;
+}
+
+.weather__info-icon {
+    font-size: 2rem;
+    margin-right: 5px;
+}
+
+.weather__info-description {
+    font-size: 1.5rem;
+}
+
+.weather__info-description p {
+    font-weight: 300;
+    font-size: 1rem;
+}
