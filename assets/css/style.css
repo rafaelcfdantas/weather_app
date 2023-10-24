@@ -11,6 +11,7 @@ body {
     background: #232526;
     background: -webkit-linear-gradient(to top, #414345, #232526);
     background: linear-gradient(to top, #414345, #232526);
+    width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -19,10 +20,11 @@ body {
 }
 
 .container {
-    width: 700px;
+    width: 600px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 1rem;
     padding: 2rem;
+    margin: 5rem;
 }
 
 .container.morning {
@@ -66,7 +68,7 @@ body {
     color: #808080;
     position: absolute;
     top: 15%;
-    left: 20px;
+    left: 0.75rem;
     font-size: 1.5rem;
 }
 
@@ -118,7 +120,7 @@ body {
 .weather__infos {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .weather__info {
@@ -137,4 +139,89 @@ body {
 .weather__info-description p {
     font-weight: 300;
     font-size: 1rem;
+}
+
+@media screen and (max-width: 640px) {
+    .header__icon {
+        font-size: calc(1.5rem * 0.833);
+    }
+
+    .header__input {
+        font-size: calc(1.1rem * 0.833);
+    }
+
+    .header__btn {
+        font-size: calc(1.3rem * 0.833);
+        width: 45px;
+        height: 45px;
+    }
+
+    .weather__icon {
+        font-size: calc(6rem * 0.833);
+    }
+
+    .weather__temperature {
+        font-size: calc(3rem * 0.833);
+    }
+
+    .weather__city {
+        font-size: calc(2rem * 0.833);
+    }
+
+    .weather__info-icon {
+        font-size: calc(2rem * 0.833);
+    }
+
+    .weather__info-description {
+        font-size: calc(1.5rem * 0.833);
+    }
+
+    .weather__info-description p {
+        font-size: calc(1rem * 0.833);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        margin: 2rem;
+    }
+
+    .header__icon {
+        top: 23%;
+        font-size: calc(1.5rem * 0.693);
+    }
+
+    .header__input {
+        font-size: calc(1.1rem * 0.693);
+    }
+
+    .header__btn {
+        font-size: calc(1.3rem * 0.693);
+        width: 42px;
+        height: 42px;
+    }
+
+    .weather__icon {
+        font-size: calc(6rem * 0.693);
+    }
+
+    .weather__temperature {
+        font-size: calc(3rem * 0.693);
+    }
+
+    .weather__city {
+        font-size: calc(2rem * 0.693);
+    }
+
+    .weather__info-icon {
+        font-size: calc(2rem * 0.693);
+    }
+
+    .weather__info-description {
+        font-size: calc(1.5rem * 0.693);
+    }
+
+    .weather__info-description p {
+        font-size: calc(1rem * 0.693);
+    }
 }
