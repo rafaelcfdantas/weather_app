@@ -15,21 +15,24 @@
 </head>
 <body>
     <main class="container morning">
-        <header class="header">
-            <div class="header__search">
-                <i class="uil uil-map-marker header__icon"></i>
-                <input type="search" name="q" class="header__input" placeholder="Procure..." autocomplete="off">
-            </div>
-            <a href="#" class="header__btn">
-                <i class="uil uil-search"></i>
-            </a>
-        </header>
+        <form id="search__form">
+            <header class="header">
+                <div class="header__search">
+                    <i class="uil uil-map-marker header__icon"></i>
+                    <input type="search" name="q" class="header__input" placeholder="Procure..." autocomplete="off">
+                </div>
+                <a href="#" class="header__btn">
+                    <i class="uil uil-search"></i>
+                </a>
+            </header>
+        </form>
 
         <section class="weather">
             <i class="uil uil-sun weather__icon"></i>
 
             <span class="weather__temperature">
-                30<i class="uil uil-celsius"></i>
+                <span id="temp">30</span>
+                <i class="uil uil-celsius"></i>
             </span>
 
             <span class="weather__city">Vila Velha</span>
@@ -38,15 +41,15 @@
                 <div class="weather__info">
                     <i class="uil uil-raindrops weather__info-icon"></i>
                     <div class="weather__info-description">
-                        49%
-                        <p>Chuva</p>
+                        <span id="humidity">49</span>
+                        <p>Humidade</p>
                     </div>
                 </div>
 
                 <div class="weather__info">
                     <i class="uil uil-wind weather__info-icon"></i>
                     <div class="weather__info-description">
-                        16km/h
+                        <span id="wind">16km/h</span>
                         <p>Vento</p>
                     </div>
                 </div>
@@ -54,6 +57,7 @@
         </section>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="assets/js/scripts.js"></script>
 </body>
 </html>
