@@ -83,6 +83,10 @@ body {
     text-align: center;
 }
 
+[list]::-webkit-calendar-picker-indicator {
+    color: transparent;
+}
+
 .header__btn {
     font-size: 1.3rem;
     border-radius: 50%;
@@ -103,9 +107,8 @@ body {
     margin-top: 30px;
 }
 
-.weather__icon {
-    font-size: 6rem;
-    color: #ffc400;
+.weather__img {
+    width: 145px;
 }
 
 .weather__temperature {
@@ -156,8 +159,8 @@ body {
         height: 45px;
     }
 
-    .weather__icon {
-        font-size: calc(6rem * 0.833);
+    .weather__img {
+        width: calc(145px * 0.833);
     }
 
     .weather__temperature {
@@ -201,8 +204,8 @@ body {
         height: 42px;
     }
 
-    .weather__icon {
-        font-size: calc(6rem * 0.693);
+    .weather__img {
+        width: calc(145px * 0.693);
     }
 
     .weather__temperature {

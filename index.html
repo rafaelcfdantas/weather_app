@@ -15,11 +15,11 @@
 </head>
 <body>
     <main class="container morning">
-        <form id="search__form">
+        <form id="search__form" autocomplete="off">
             <header class="header">
                 <div class="header__search">
                     <i class="uil uil-map-marker header__icon"></i>
-                    <input type="search" name="q" class="header__input" placeholder="Procure..." autocomplete="off">
+                    <input type="search" name="q" class="header__input" placeholder="Procure...">
                 </div>
                 <a href="#" class="header__btn">
                     <i class="uil uil-search"></i>
@@ -28,14 +28,14 @@
         </form>
 
         <section class="weather">
-            <i class="uil uil-sun weather__icon"></i>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Weather Icon" class="weather__img" id="weather__img">
 
             <span class="weather__temperature">
                 <span id="temp">30</span>
                 <i class="uil uil-celsius"></i>
             </span>
 
-            <span class="weather__city">Vila Velha</span>
+            <span class="weather__city" id="weather__city">Vila Velha</span>
 
             <div class="weather__infos">
                 <div class="weather__info">
