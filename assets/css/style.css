@@ -104,7 +104,22 @@ body {
     flex-direction: column;
     align-items: center;
     row-gap: 2rem;
+    max-height: 0;
+    opacity: 0;
+}
+
+.no__weather {
+    max-height: 0;
+    text-align: center;
+    opacity: 0;
+}
+
+.weather.active,
+.no__weather.active {
+    transition: opacity .5s linear .1s, max-height .2s linear;
+    max-height: 1000px;
     margin-top: 30px;
+    opacity: 1;
 }
 
 .weather__img {
