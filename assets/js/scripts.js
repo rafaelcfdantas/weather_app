@@ -30,6 +30,7 @@ async function updateForecast(search_text = false) {
             sunrise: new Date(res.data.sys.sunrise * 1000),
             sunset: new Date(res.data.sys.sunset * 1000),
             weather_id: res.data.weather[0].id,
+            weather_desc: res.data.weather[0].description,
             city: `${res.data.name} - ${res.data.sys.country}`,
             temp: Math.round(res.data.main.temp),
             humidity: res.data.main.humidity + '%',
@@ -50,6 +51,7 @@ function changeScreenData(data) {
     document.querySelector('.no__weather').classList.remove('active');
     document.querySelector('.header__input').value = '';
     document.getElementById('weather__img').src = data.icon;
+    document.getElementById('weather__description').innerText = data.weather_desc;
     document.getElementById('weather__city').innerText = data.city;
     document.getElementById('temp').innerText = data.temp;
     document.getElementById('humidity').innerText = data.humidity;

@@ -122,8 +122,18 @@ body {
     opacity: 1;
 }
 
+.weather__data {
+    text-align: center;
+}
+
 .weather__img {
     width: 145px;
+    vertical-align: middle;
+}
+
+.weather__description {
+    font-size: 2rem;
+    text-transform: capitalize;
 }
 
 .weather__temperature {
@@ -178,6 +188,10 @@ body {
         width: calc(145px * 0.833);
     }
 
+    .weather__description {
+        font-size: calc(2rem * 0.833);
+    }
+
     .weather__temperature {
         font-size: calc(3rem * 0.833);
     }
@@ -221,6 +235,10 @@ body {
 
     .weather__img {
         width: calc(145px * 0.693);
+    }
+
+    .weather__description {
+        font-size: calc(2rem * 0.693);
     }
 
     .weather__temperature {
