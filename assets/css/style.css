@@ -126,6 +126,17 @@ body {
     text-align: center;
 }
 
+.weather__time-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.weather__time {
+    font-weight: 300;
+}
+
 .weather__img {
     width: 145px;
     vertical-align: middle;
@@ -188,6 +199,10 @@ body {
         width: calc(145px * 0.833);
     }
 
+    .weather__time-wrapper {
+        font-size: calc(1rem * 0.833);
+    }
+
     .weather__description {
         font-size: calc(2rem * 0.833);
     }
@@ -231,6 +246,10 @@ body {
         font-size: calc(1.3rem * 0.693);
         width: 42px;
         height: 42px;
+    }
+
+    .weather__time-wrapper {
+        font-size: calc(1rem * 0.693);
     }
 
     .weather__img {

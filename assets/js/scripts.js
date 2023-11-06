@@ -47,9 +47,15 @@ async function updateForecast(search_text = false) {
 }
 
 function changeScreenData(data) {
+    syncTimezone(data);
+
+    const hour = data.timestamp.getHours() < 10 ? '0' + data.timestamp.getHours() : data.timestamp.getHours();
+    const minutes = data.timestamp.getMinutes() < 10 ? '0' + data.timestamp.getMinutes() : data.timestamp.getMinutes();
+
     document.querySelector('section.weather').classList.add('active');
     document.querySelector('.no__weather').classList.remove('active');
     document.querySelector('.header__input').value = '';
+    document.getElementById('weather__time').innerText = `às ${hour}:${minutes}`;
     document.getElementById('weather__img').src = data.icon;
     document.getElementById('weather__description').innerText = data.weather_desc;
     document.getElementById('weather__city').innerText = data.city;
@@ -60,13 +66,11 @@ function changeScreenData(data) {
     const container = document.querySelector('main.container');
     container.classList.remove('morning', 'sun', 'sunset', 'rain', 'night');
 
-    if (/^[2|3|5|6][0-9][0-9]|80[2-4]/.test(data.weather_id)) {
+    if (/^[2|3|5|6][0-9][0-9]|80[3-4]/.test(data.weather_id)) {
         // cloudy or raining
         container.classList.add('rain');
     } else {
         // clear sky
-        syncTimezone(data);
-
         let actual_hour = data.timestamp.getHours();
         let sunrise_hour = data.sunrise.getHours();
         let sunset_hour = data.sunset.getHours();
