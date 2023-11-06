@@ -33,9 +33,6 @@
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [ ] Adicionar a hora em que o clima foi calculado
-- [ ] Adicionar botão para atualziar o clima do local selecionado
-- [ ] Adicionar descrição do clima atual
 - [ ] Melhorar os ícones exibidos
 - [ ] Melhorar o background exibido
 
@@ -46,10 +43,10 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 <!-- TECNOLOGIAS -->
 ## Tecnologias
 
-* ![HTML][HTML]
-* ![CSS][CSS]
-* ![JavaScript][JavaScript]
-* [![Axios][Axios-badge]][Axios-url]
+* <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"><img src="https://img.shields.io/badge/html-white.svg?style=for-the-badge&logo=html5&logoColor=E34F26"></a>
+* <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank"><img src="https://img.shields.io/badge/CSS-white?&style=for-the-badge&logo=css3&logoColor=blue"></a>
+* <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"><img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"></a>
+* <a href="https://axios-http.com/" target="_blank"><img src="https://img.shields.io/badge/Axios-ffffff?style=for-the-badge&logo=axios&logoColor=5A29E4"></a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -58,11 +55,13 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 <!-- PRÉ-REQUISITOS -->
 ## Pré-requisitos
 
-Algum servidor web instalado e ativo para rodar o projeto como:
+Algum servidor web instalado e ativo para rodar o projeto, como:
 
 * Apache
 * nginx
 * Live Server (VSCode)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -92,27 +91,8 @@ Para usar o app, basta digitar o nome de algum lugar do mundo que será exibido 
 <!-- CONTATO -->
 ## Contato
 
-[![GitHub][GitHub-badge]][GitHub-url]
-[![LinkedIn][LinkedIn-badge]][LinkedIn-url]
-[![Gmail][Gmail-badge]][Gmail-url]
+<a href="https://github.com/rafaelcfdantas/" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
+<a href="https://www.linkedin.com/in/rafael-dantas-2019/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+<a href="mailto:rafael.cfd1999@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-
-<!-- Social -->
-[GitHub-badge]: https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white
-[GitHub-url]: https://github.com/rafaelcfdantas/
-[LinkedIn-badge]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
-[LinkedIn-url]: https://www.linkedin.com/in/rafael-dantas-2019/
-[Gmail-badge]: https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white
-[Gmail-url]: mailto:rafael.cfd1999@gmail.com
-
-<!-- Tecnologias -->
-[HTML]: https://img.shields.io/badge/html-white.svg?style=for-the-badge&logo=html5&logoColor=E34F26
-[CSS]: https://img.shields.io/badge/CSS-white?&style=for-the-badge&logo=css3&logoColor=blue
-[JavaScript]: https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E
-[Axios-badge]: https://img.shields.io/badge/Axios-ffffff?style=for-the-badge&logo=axios&logoColor=5A29E4
-[Axios-url]: https://axios-http.com/

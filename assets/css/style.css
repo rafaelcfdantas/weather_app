@@ -122,8 +122,40 @@ body {
     opacity: 1;
 }
 
+.weather__data {
+    text-align: center;
+}
+
+.weather__time-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.weather__time {
+    font-weight: 300;
+}
+
+#update-forecast {
+    margin-left: 10px;
+    border-radius: 50%;
+    border-width: 0;
+    width: 30px;
+    background-color: #ffffff;
+    height: 30px;
+    cursor: pointer;
+    color: #808080;
+}
+
 .weather__img {
     width: 145px;
+    vertical-align: middle;
+}
+
+.weather__description {
+    font-size: 2rem;
+    text-transform: capitalize;
 }
 
 .weather__temperature {
@@ -178,6 +210,14 @@ body {
         width: calc(145px * 0.833);
     }
 
+    .weather__time-wrapper {
+        font-size: calc(1rem * 0.833);
+    }
+
+    .weather__description {
+        font-size: calc(2rem * 0.833);
+    }
+
     .weather__temperature {
         font-size: calc(3rem * 0.833);
     }
@@ -219,8 +259,16 @@ body {
         height: 42px;
     }
 
+    .weather__time-wrapper {
+        font-size: calc(1rem * 0.693);
+    }
+
     .weather__img {
         width: calc(145px * 0.693);
+    }
+
+    .weather__description {
+        font-size: calc(2rem * 0.693);
     }
 
     .weather__temperature {

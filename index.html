@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Rafael de Carvalho França Dantas">
-    <meta name="description" content="Tenha acesso à informações simples sobre a previsão do tempo no seu local de preferência!">
+    <meta name="description" content="Selecione locais ao redor do mundo e veja as informações atuais sobre o clima!">
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 
-    <title>Previsão do Tempo</title>
+    <title>Clima Atual</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
@@ -28,7 +28,14 @@
         </form>
 
         <section class="weather">
-            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Weather Icon" class="weather__img" id="weather__img">
+            <div class="weather__data">
+                <div class="weather__time-wrapper">
+                    <p class="weather__time" id="weather__time">às 14:35</p>
+                    <button class="uil uil-sync" id="update-forecast" onclick="updateForecast(localStorage.getItem('storedCity'));"></button>
+                </div>
+                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Weather Icon" class="weather__img" id="weather__img">
+                <p class="weather__description" id="weather__description">Nublado</p>
+            </div>
 
             <span class="weather__temperature">
                 <span id="temp">30</span>
