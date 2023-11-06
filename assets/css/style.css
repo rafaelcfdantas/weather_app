@@ -137,6 +137,17 @@ body {
     font-weight: 300;
 }
 
+#update-forecast {
+    margin-left: 10px;
+    border-radius: 50%;
+    border-width: 0;
+    width: 30px;
+    background-color: #ffffff;
+    height: 30px;
+    cursor: pointer;
+    color: #808080;
+}
+
 .weather__img {
     width: 145px;
     vertical-align: middle;
